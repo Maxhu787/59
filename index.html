@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>59</title>
+    <style>
+        body {
+            background-color: rgb(41, 41, 41);
+            text-align: center;
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: #fff;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        .item {
+            position: relative;
+            font-family: 'orbitron';
+            font-size: 24px;
+            text-align: center;
+            background-color: rgba(91, 91, 91, .8);
+            padding: 40px 8px 10px 8px;
+            border-radius: 12px;
+            height: 300px;
+            width: 200px;
+            display: inline-block;
+            margin: 10px 10px 10px 0px;
+            transition: all .15s ease-in-out;
+            cursor: pointer;
+            box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #7a7a7a 0 -3px 0 inset;
+        }
+
+        .item:hover {
+            background-color: rgba(91, 91, 91, 1);
+            box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #03d0f4 0 -3px 0 inset;
+            transform: translateY(-8px);
+        }
+
+
+        .rainbow_text_animated {
+            background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: rainbow_animation 6s ease-in-out infinite;
+            background-size: 400% 100%;
+        }
+
+        @keyframes rainbow_animation {
+
+            0%,
+            100% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 100% 0;
+            }
+        }
+
+
+        .download {
+            position: absolute;
+            text-transform: lowercase;
+            appearance: none;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 4px;
+            border-width: 0;
+            box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+            box-sizing: border-box;
+            color: #36395A;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: "JetBrains Mono", monospace;
+            height: 48px;
+            width: 200px;
+            line-height: 1;
+            list-style: none;
+            overflow: hidden;
+            text-align: center;
+            text-decoration: none;
+            transition: box-shadow .15s, transform .15s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            will-change: box-shadow, transform;
+            font-size: 16px;
+            padding: 10px 10px 10px 38px;
+            z-index: 888;
+            bottom: 20px;
+            left: 8px;
+        }
+
+
+
+        .download:hover {
+            box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+            transform: translateY(-2px);
+        }
+
+        .download:active {
+            box-shadow: #D6D6E7 0 3px 7px inset;
+            transform: translateY(2px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item">
+        <img src="">
+        <p class="rainbow_text_animated">test</p>
+        <a class="download" href="" download>download files</a>
+    </div>
+    <div class="item">
+        <img src="">
+        <p class="rainbow_text_animated">test</p>
+        <a class="download" href="" download>download files</a>
+    </div>
+    <div class="item">
+        <img src="">
+        <p class="rainbow_text_animated">test</p>
+        <a class="download" href="" download>download files</a>
+    </div>
+</body>
+
+</html>
