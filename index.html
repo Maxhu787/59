@@ -143,10 +143,20 @@
             box-shadow: #D6D6E7 0 3px 7px inset;
             transform: translateY(2px);
         }
+
+        #particles-js {
+            position: fixed;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+        }
     </style>
 </head>
 
 <body>
+    <div id="particles-js"></div>
     <h2>電作</h2>
     <div class="item">
         <img src="./g4o2.jpeg">
@@ -163,6 +173,12 @@
         <p class="rainbow_text_animated">陣列清單實作_小星星<sup>2&#8209;1&#8209;2</sup></p>
         <a class="download" href="./files/2-1-2 陣列清單實作_小星星.sb3" download>download</a>
     </div>
+    <script src="./js/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', './js/particles.json', function() {
+            //console.log('callback - particles.js config loaded');
+        });
+    </script>
 </body>
 
 </html>
